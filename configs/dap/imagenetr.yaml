@@ -1,0 +1,22 @@
+_BASE_: "../base-dap.yaml"
+CONTINUAL:
+  INITIAL: 20
+  INCREMENT: 20
+  N_TASKS: 10
+DATA:
+  NAME: "imagenet_r"
+  NUMBER_CLASSES: 200
+MODEL:
+  DAP:
+    SIM_LAMBDA: 2.0
+    NUM_DAP_TOKENS: 30
+    TASK_EMB: 64
+    NUM_TASKS_FOR_EMB: 10
+    PROMPT_POOL: 10
+SOLVER:
+  BASE_LR: 0.25
+  OPTIMIZER: 'sgd'
+  TOTAL_EPOCH: 20
+SEED: 42
+OUTPUT_DIR: "./results/seed42"
+

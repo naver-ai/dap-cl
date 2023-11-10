@@ -1,0 +1,19 @@
+_BASE_: "../base-dap.yaml"
+CONTINUAL:
+  INITIAL: 23
+  INCREMENT: 23
+  N_TASKS: 15
+DATA:
+  NAME: "domainnet/real"
+  NUMBER_CLASSES: 345
+MODEL:
+  DAP:
+    NUM_TASKS_FOR_EMB: 15
+    PROMPT_POOL: 15
+SOLVER:
+  TOTAL_EPOCH: 5
+SEED: 42
+OUTPUT_DIR: "./results/seed42"
+
+
+

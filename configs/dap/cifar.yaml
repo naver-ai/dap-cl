@@ -1,0 +1,19 @@
+_BASE_: "../base-dap.yaml"
+CONTINUAL:
+  INITIAL: 10
+  INCREMENT: 10
+  N_TASKS: 10
+DATA:
+  NAME: "cifar100"
+  NUMBER_CLASSES: 100
+MODEL:
+  DAP:
+    NUM_TASKS_FOR_EMB: 10
+    PROMPT_POOL: 10
+SOLVER:
+  TOTAL_EPOCH: 5
+SEED: 42
+OUTPUT_DIR: "./results/seed42"
+
+
+

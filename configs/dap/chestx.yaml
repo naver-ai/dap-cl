@@ -1,0 +1,14 @@
+_BASE_: "../base-dap.yaml"
+CONTINUAL:
+  INITIAL: 3
+  INCREMENT: 3
+  N_TASKS: 2
+DATA:
+  NAME: "chestx"
+  NUMBER_CLASSES: 6
+MODEL:
+  DAP:
+    NUM_TASKS_FOR_EMB: 2
+    PROMPT_POOL: 2
+SEED: 42
+OUTPUT_DIR: "./results/seed42"

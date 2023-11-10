@@ -1,0 +1,14 @@
+_BASE_: "../base-dap.yaml"
+CONTINUAL:
+  INITIAL: 2
+  INCREMENT: 2
+  N_TASKS: 3
+DATA:
+  NAME: "isic"
+  NUMBER_CLASSES: 6
+MODEL:
+  DAP:
+    NUM_TASKS_FOR_EMB: 3
+    PROMPT_POOL: 3
+SEED: 42
+OUTPUT_DIR: "./results/seed42"

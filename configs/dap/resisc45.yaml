@@ -1,0 +1,16 @@
+_BASE_: "../base-dap.yaml"
+CONTINUAL:
+  INITIAL: 5
+  INCREMENT: 5
+  N_TASKS: 9
+DATA:
+  NAME: "resisc45"
+  NUMBER_CLASSES: 45
+MODEL:
+  DAP:
+    SIM_LAMBDA: 0.5
+    NUM_TASKS_FOR_EMB: 9
+    PROMPT_POOL: 9
+SEED: 42
+OUTPUT_DIR: "./results/seed42"
+

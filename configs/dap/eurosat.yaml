@@ -1,0 +1,16 @@
+_BASE_: "../base-dap.yaml"
+CONTINUAL:
+  INITIAL: 2
+  INCREMENT: 2
+  N_TASKS: 5
+DATA:
+  NAME: "eurosat/rgb"
+  NUMBER_CLASSES: 10
+MODEL:
+  DAP:
+    NUM_TASKS_FOR_EMB: 5
+    PROMPT_POOL: 5
+SOLVER:
+  TOTAL_EPOCH: 5
+SEED: 42
+OUTPUT_DIR: "./results/seed42"

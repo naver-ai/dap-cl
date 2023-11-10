@@ -1,0 +1,15 @@
+_BASE_: "../base-dap.yaml"
+CONTINUAL:
+  INITIAL: 5
+  INCREMENT: 5
+  N_TASKS: 7
+DATA:
+  NAME: "oxford_iiit_pet"
+  NUMBER_CLASSES: 35
+MODEL:
+  DAP:
+    NUM_TASKS_FOR_EMB: 7
+    PROMPT_POOL: 7
+SEED: 42
+OUTPUT_DIR: "./results/seed42"
+
